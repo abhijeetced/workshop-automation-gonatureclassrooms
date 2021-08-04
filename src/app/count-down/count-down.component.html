@@ -1,0 +1,39 @@
+
+ <div class="o-media__figure">
+  <span class="skeleton-box" style="width:100px;height:80px;"></span>
+</div>
+
+<section class="bmw-countdown-wrapper" *ngIf="!(webinar && counter)">
+  <div class="container">
+    <div class="bmw-section-heading" >
+      <h4>MARK THE WORKSHOP DATE</h4>
+      <h5>DATE IS LOADING</h5>
+    </div>
+    <div id="countdown">
+      <ul class="mwb_countdown_ul">
+        <li class="mwb_countdown_li"><span id="days" >00</span>days</li>
+        <li class="mwb_countdown_li"><span id="hours">00</span>Hours</li>
+        <li class="mwb_countdown_li"><span id="minutes">00</span>Minutes</li>
+        <li class="mwb_countdown_li"><span id="seconds">00</span>Seconds</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="bmw-countdown-wrapper" *ngIf="webinar && counter">
+  <div class="container">
+    <div class="bmw-section-heading" >
+      <h4>MARK THE WORKSHOP DATE</h4>
+      <h5>{{schedule | date:'medium'}}</h5>
+    </div>
+    <div id="countdown" *ngIf="counter">
+      <ul class="mwb_countdown_ul">
+        <li class="mwb_countdown_li"><span id="days">{{counter.days}}</span>days</li>
+        <li class="mwb_countdown_li"><span id="hours">{{counter.hours}}</span>Hours</li>
+        <li class="mwb_countdown_li"><span id="minutes">{{counter.minutes}}</span>Minutes</li>
+        <li class="mwb_countdown_li"><span id="seconds">{{counter.seconds}}</span>Seconds</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- END countdown -->

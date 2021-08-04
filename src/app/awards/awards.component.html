@@ -1,0 +1,14 @@
+
+<section class="bmw-award-wrapper section-padding">
+  <div class="container">
+    <div class="bmw-section-heading">
+      <h4>AWARDS</h4>
+      <p>We have been rewarded with various awards at the national & international levels. Yes, we believe in social proof, as in today’s world; one is considered genuine if they keep everything transparent.</p>
+    </div>
+    <carousel>
+      <div class="carousel-cell" *ngFor="let slide of slidesStore">
+          <img  [src]="slide.src">
+      </div>
+    </carousel>
+  </div>
+</section>
