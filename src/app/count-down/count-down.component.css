@@ -1,0 +1,72 @@
+/* countdown */
+.bmw-countdown-wrapper {
+    margin-bottom: 100px;
+  }
+  #countdown {
+    text-align: center;
+    margin-top: 60px;
+  }
+  #countdown ul.mwb_countdown_ul {
+    padding: 0;
+  }
+  .mwb_countdown_ul .mwb_countdown_li {
+    display: inline-block;
+    font-size: 18px;
+    list-style-type: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 11px 0px #ccc;
+    margin: 0px 20px;
+    width: 170px;
+    height: 170px;
+    padding: 20px 15px 16px 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    text-transform: capitalize;
+  }
+  .mwb_countdown_ul .mwb_countdown_li span {
+    display: block;
+    font-size: 50px;
+    margin-bottom: 14px !important;
+    text-align: center;
+    font-weight: 600;
+  }
+  /* END countdown */
+
+
+
+  @media only screen and (max-width: 992px) {
+    .mwb_countdown_ul .mwb_countdown_li {
+      margin: 0px 12px;
+      width: 140px;
+      height: 140px;
+      padding: 11px 15px 16px 15px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .mwb_countdown_ul .mwb_countdown_li {
+      margin: 0px 10px;
+      width: 100px;
+      height: 100px;
+      padding: 12px 15px 16px 15px;
+      font-size: 14px;
+    }
+    .mwb_countdown_ul .mwb_countdown_li span {
+      display: block;
+      font-size: 26px;
+      margin-bottom: 5px !important;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .mwb_countdown_ul .mwb_countdown_li {
+      margin: 0px 5px;
+      width: 60px;
+      height: auto;
+      padding: 9px 8px 16px 8px;
+      font-size: 12px;
+    }
+
+  }
