@@ -426,7 +426,7 @@ button.owl-next:after {
   overflow: hidden;
 }
 .bmw-client-wrapper .owl-item {
-  height: 340px;
+  height: 340px !important;
   margin-bottom: 30px;
   overflow: hidden;
 }

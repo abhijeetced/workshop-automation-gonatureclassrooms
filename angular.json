@@ -29,7 +29,6 @@
               "src/assets/css/responsive.css",
               "src/assets/css/style.css",
               "src/styles.css"
-
             ],
             "scripts": [
               "src/assets/js/jquery.min.js",
@@ -95,11 +94,11 @@
               "src/assets/images/favicons/favicon.ico"
             ],
             "styles": [
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "src/styles.css"
-
             ],
-            "scripts": [
-            ]
+            "scripts": []
           }
         },
         "lint": {
@@ -128,6 +127,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "workshop-pages-gonatureclassrooms-org"
+    }
+  },
+  "defaultProject": "workshop-pages-gonatureclassrooms-org",
+  "cli": {
+    "analytics": "529dba84-a15c-4e0d-a55f-d03f016abd4c"
+  }
 }

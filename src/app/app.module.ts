@@ -8,7 +8,9 @@ import { CountDownComponent } from './count-down/count-down.component';
 import { AwardsComponent } from './awards/awards.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+// import {IvyCarouselModule} from 'angular-responsive-carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,9 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     AngularFireDatabaseModule,
     CarouselModule,
     BrowserAnimationsModule,
-    IvyCarouselModule
+    // IvyCarouselModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

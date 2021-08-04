@@ -1,10 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
+
+
+
 @Component({
   selector: 'gonature-workshop-awards',
   templateUrl: './awards.component.html',
-  styleUrls: ['./awards.component.css']
+  styleUrls: ['./awards.component.css'],
 })
-export class AwardsComponent implements OnInit {
+
+
+export class AwardsComponent implements OnInit  {
 
   slidesStore = [
     {id:"1",alt:"1",title:"Image 01",src:"assets/images/gonature_award_one.jpg"},
@@ -13,11 +19,34 @@ export class AwardsComponent implements OnInit {
     {id:"4",alt:"1",title:"Image 01",src:"assets/images/gonature_award_four.jpg"},
     {id:"5",alt:"1",title:"Image 01",src:"assets/images/gonature_award_one.jpg"},
     {id:"6",alt:"1",title:"Image 01",src:"assets/images/gonature_award_two.jpg"},
-
   ]
-  constructor() { }
 
-  ngOnInit(): void {
+  customOptions: OwlOptions = {
+    loop: true,
+    autoplay: true,
+    dots: false,
+    autoHeight: true,
+    autoWidth: true,
+    items: 4,
+    nav: true,
+    margin: 20,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+        nav: false
+      },
+      1000: {
+        items: 4,
+      }
+    }
   }
+  
+  constructor(
+  ) {}
 
+  ngOnInit() {
+  }
 }

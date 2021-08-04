@@ -316,8 +316,8 @@
 
         </div>
         <div id="ClientSlider" >
-          <carousel>
-            <div class="carousel-cell">
+          <owl-carousel-o [options]="clientslider">
+            <ng-template carouselSlide>
               <div class="item">
                 <div class="mwb-client-feedback">
                   <div class="mwb-client-content">
@@ -338,8 +338,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-cell">
+            </ng-template>
+            <ng-template carouselSlide>
               <div class="item">
                 <div class="mwb-client-feedback">
                   <div class="mwb-client-content">
@@ -361,9 +361,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-cell">
-
+            </ng-template>
+            <ng-template carouselSlide>
               <div class="item">
                 <div class="mwb-client-feedback">
                   <div class="mwb-client-content">
@@ -384,9 +383,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-cell">
-
+            </ng-template>
+            <ng-template carouselSlide>
               <div class="item">
                 <div class="mwb-client-feedback">
                   <div class="mwb-client-content">
@@ -407,9 +405,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-cell">
-
+            </ng-template>
+            <ng-template carouselSlide>
               <div class="item">
                 <div class="mwb-client-feedback">
                   <div class="mwb-client-content">
@@ -430,10 +427,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </carousel>
-
-
+            </ng-template>
+          </owl-carousel-o>
         </div>
       </div>
     </section>
