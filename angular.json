@@ -25,13 +25,10 @@
             ],
             "styles": [
               "src/assets/css/bootstrap.css",
-              "src/assets/css/font-awesome.css",
               "src/assets/css/responsive.css",
-              "src/assets/css/style.css",
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/jquery.min.js",
               "src/assets/js/bootstrap.js"
             ]
           },

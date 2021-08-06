@@ -1,0 +1,52 @@
+<section class="bmw-award-wrapper bmw-video-wrapper section-padding bg-white">
+  <div class="container">
+    <div class="bmw-section-heading">
+      <h4>Success Stories</h4>
+    </div>
+    <div id="videoSlider" class="row">
+      <gonature-workshop-review *ngFor="let review of reviews" [review]="review"></gonature-workshop-review>
+      <div class="item col-md-4" *ngFor="let review of reviews">
+        <div class="mwb-video-wrapper">
+          <iframe [title]="review.title" [src]="review.url" width="100%" height="198" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <h4>{{review.title}}</h4>
+      </div>
+      <!-- <div class="item col-md-4">
+        <div class="mwb-video-wrapper">
+          <iframe title="YouTube video player" src="https://www.youtube.com/embed/llOLlRX22Jo" width="100%" height="198" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <h4>Harpreet Reversed Her 11 Years PCOD Problem (Trailer)</h4>
+      </div>
+      <div class="item col-md-4">
+        <div class="mwb-video-wrapper">
+          <iframe title="YouTube video player" src="https://www.youtube.com/embed/XU3mtqrex48" width="100%" height="198" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <h4>Kavita Reversed Her 5 Years Old Depression (Trailer)</h4>
+      </div>
+      <div class="item col-md-4">
+        <div class="mwb-video-wrapper">
+          <iframe title="YouTube video player" src="https://www.youtube.com/embed/M3rBVugrBy8" width="100%" height="198" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <h4>Varun Bhargava Reversed His 25 Years Old Diabetes (Trailer)</h4>
+      </div>
+      <div class="item col-md-4">
+        <div class="mwb-video-wrapper">
+          <iframe title="YouTube video player" src="https://www.youtube.com/embed/nlkZPVP-OY0" width="100%" height="198" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <h4>Dipak Reversed 9 Years Old Diabetes (Trailer)</h4>
+      </div>
+      <div class="item col-md-4">
+        <div class="mwb-video-wrapper">
+          <iframe title="YouTube video player" src="https://www.youtube.com/embed/MW2_55Fx5eU" width="100%" height="198" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <h4>Satish Kumar Reversed His 20 Years Old Constipation (Trailer)</h4>
+      </div>
+      <div class="item col-md-4">
+        <div class="mwb-video-wrapper">
+          <iframe title="YouTube video player" src="https://www.youtube.com/embed/Ef4xB5BX-qs" width="100%" height="198" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <h4>Tarun Bhargava Reversed His Hypertension and Lost 27 kg Weight (Trailer)</h4>
+      </div> -->
+    </div>
+  </div>
+</section>
