@@ -13,6 +13,9 @@ export class ReviewsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+
+
   }
 
 }

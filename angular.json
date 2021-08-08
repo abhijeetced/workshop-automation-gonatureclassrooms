@@ -29,6 +29,7 @@
               "src/styles.css"
             ],
             "scripts": [
+              "src/assets/js/jquery.min.js",
               "src/assets/js/bootstrap.js"
             ]
           },
