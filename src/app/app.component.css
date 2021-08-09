@@ -1,0 +1,63 @@
+.bmw-product-gift-widget-wrapper{
+    padding-bottom: 60px;
+}
+.bmw-product-gift-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bmw-product-gift-wrapper .bmw-product-gift-number h3 {
+    font-size: 25px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.bmw-product-gift-widget h4 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.bmw-product-gift-wrapper .bmw-product-gift-number h3.bmw-outline {
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.bmw-product-gift-widget-wrapper .col-lg-3 {
+    border-bottom: solid 3px #ccc;
+    border-right: solid 3px #ccc;
+}
+.bmw-product-gift-widget-wrapper .bmw-product-gift-widget {
+    padding: 30px 0px;
+}
+.bmw-product-gift-widget-wrapper .col-lg-3:nth-child(4) {
+    border-right: 0;
+}
+.bmw-product-gift-widget-wrapper .col-lg-3:nth-child(5){
+border-bottom: 0;
+}
+.bmw-product-gift-widget-wrapper .col-lg-3:nth-child(6){
+    border-bottom: 0;
+}
+.bmw-product-gift-widget-wrapper .col-lg-3:nth-child(7){
+    border-bottom: 0;
+}
+.bmw-product-gift-widget-wrapper .col-lg-3:last-child {
+    border: 0;
+}
+@media only screen and (max-width: 767px) {
+    .bmw-product-gift-widget-wrapper .col-lg-3:nth-child(2),
+    .bmw-product-gift-widget-wrapper .col-lg-3:nth-child(6) {
+        border-right: 0;
+    }
+    .bmw-product-gift-widget-wrapper .col-lg-3:nth-child(5),
+    .bmw-product-gift-widget-wrapper .col-lg-3:nth-child(6){
+        border-bottom: solid 3px #ccc;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .bmw-product-gift-widget-wrapper .col-lg-3{
+        border-right: 0;
+        border-bottom: solid 3px #ccc !important;
+    }
+}
