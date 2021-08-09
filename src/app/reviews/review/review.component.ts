@@ -8,10 +8,12 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class ReviewComponent implements OnInit {
   @Input("review") review:any;
-  constructor(public sanitizer: DomSanitizer)  { }
+  constructor(public sanitizer: DomSanitizer)  {
+
+  }
 
   ngOnInit(): void {
-    
+    this.review.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.review.url)
   }
 
 }

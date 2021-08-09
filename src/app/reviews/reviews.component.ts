@@ -7,7 +7,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewsComponent implements OnInit {
   reviews:IREVIEW[] = [
-    {thumbnail:"",url:"https://www.youtube.com/embed/i-84Ypj-N4I",title:"Nidhi Reversed Hypertension & Nose Bleeding (Trailer)"}
+    {
+      thumbnail:"",
+      url:"https://www.youtube.com/embed/i-84Ypj-N4I",
+      title:"Nidhi Reversed Hypertension & Nose Bleeding (Trailer)"
+    },
+    {
+      thumbnail:"",
+      url:"https://www.youtube.com/embed/i-84Ypj-N4I",
+      title:"Nidhi Reversed Hypertension & Nose Bleeding (Trailer)"
+    },
+    {
+      thumbnail:"",
+      url:"https://www.youtube.com/embed/i-84Ypj-N4I",
+      title:"Nidhi Reversed Hypertension & Nose Bleeding (Trailer)"
+    },
+    {
+      thumbnail:"",
+      url:"https://www.youtube.com/embed/i-84Ypj-N4I",
+      title:"Nidhi Reversed Hypertension & Nose Bleeding (Trailer)"
+    },
+    {
+      thumbnail:"",
+      url:"https://www.youtube.com/embed/i-84Ypj-N4I",
+      title:"Nidhi Reversed Hypertension & Nose Bleeding (Trailer)"
+    },
+    {
+      thumbnail:"",
+      url:"https://www.youtube.com/embed/i-84Ypj-N4I",
+      title:"Nidhi Reversed Hypertension & Nose Bleeding (Trailer)"
+    },
+    {
+      thumbnail:"",
+      url:"https://www.youtube.com/embed/i-84Ypj-N4I",
+      title:"Nidhi Reversed Hypertension & Nose Bleeding (Trailer)"
+    },
+    {
+      thumbnail:"",
+      url:"https://www.youtube.com/embed/i-84Ypj-N4I",
+      title:"Nidhi Reversed Hypertension & Nose Bleeding (Trailer)"
+    }
   ];
 
   constructor() { }
