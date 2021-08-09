@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import '../../../node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.css';
+@import '../../../node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.css'; 
+
+:root{
+  --primary: #249c74;
+  --secondary: #249c74;
+  --btn-primary: #f06989;
+  --btn-primary-hover-text: #ffffff;
+}
+body {
+  font-family: 'Alata', sans-serif;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+a {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #000000;
+}
+a:hover {
+  color: var(--btn-primary-hover-text);
+}
+.btn-primary {
+  text-transform: uppercase;
+  background-color: white;
+  color: #171717;
+  font-size: 21px;
+  padding: 10px 24px 8px 24px;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 500;
+  font-family: 'Alata', sans-serif;
+}
+.btn-primary:hover {
+  background-color: #000;
+  border-color: var(--btn-primary);
+  color: var(--btn-primary-hover-text);
+}
+.btn-primary:hover, .btn-primary:active,
+.btn-primary:focus, .btn-primary.focus{
+  background-color: #000;
+  border-color: var(--btn-primary);
+  color: var(--btn-primary-hover-text);
+}
+
+.section-padding {
+  padding: 60px 0px;
+}
+.bmw-section-heading {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.bmw-section-heading h4 {
+  font-size: 34px;
+  font-family: 'Alata', sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: #000000;
+}
+.bmw-section-heading p {
+  color: #737373;
+  font-family: 'Alata', sans-serif;
+}
+.bmw-section-heading h5 {
+  color: #868686;
+}
+
+/* Global End */
+
+/* Header */
+.main-header {
+  background: linear-gradient( 
+142.25deg
+, #EE722B 0%, #b8e866 97.92%);
+}
+
+.main-header .navbar .nav-item .nav-link {
+  text-transform: uppercase;
+  color: #000;
+  font-family: 'Alata', sans-serif;
+}
+.main-header li a {
+  color: #1f1f1f;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.main-logo .navbar-brand img {
+  width: 130px;
+}
+
+/* banner */
+.bmw-banner {
+  padding: 60px 0px 0px 0px;
+  background: linear-gradient( 
+82.25deg
+, #EE722B 0%, #b8e866 97.92%);
+  position: relative;
+  z-index: 9;
+  margin-bottom: 200px;
+  margin-top: -2px;
+}
+.bmw-banner .bmw-widget h1 {
+  font-family: 'Alata', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #ffffff;
+}
+.bmw-banner .bmw-widget iframe{
+  border-radius: 10px;
+}
+.bmw-banner .bmw-widget p {
+  color: #fff;
+  font-size: 22px;
+}
+.banner-svg-btm svg {
+  width: 100%;
+}
+.banner-svg-btm {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -14vw;
+}
+.bmw-mobile-view{
+  display: none;
+}
+.bmw-widget.bmw-mobile-view .banner-price {
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+/* banner END */
+
+
+
+
+
+/* Product */
+
+.bmw-product-wrapper .bmw-product-widget-section {
+  background-color: #f3f3f3;
+  padding: 80px 0px;
+}
+.bmw-product-wrapper .bmw-product-widget-section .bmw-product-widget h4 {
+  margin-bottom: 20px;
+}
+.bmw-product-wrapper .bmw-product-widget-section .bmw-product-widget .mwb-list-about {
+  padding: 0;
+  list-style: none;
+}
+.bmw-product-wrapper .bmw-product-widget-section .bmw-product-widget .mwb-list-about li {
+  margin-bottom: 10px;
+  color: #636363;
+  font-size: 14px;
+  padding-left: 30px;
+  position: relative;
+}
+.bmw-product-wrapper .bmw-product-widget-section .bmw-product-widget .mwb-list-about li:after {
+  background-image: url('../images/check.png');
+  position: absolute;
+  content: '';
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+}
+.bmw-product-wrapper .bmw-product-widget-section:nth-child(odd) {
+  background-color: #fff;
+}
+.bmw-product-widget-img img {
+  max-width: 440px;
+  margin: 0 auto;
+  display: block;
+}
+.bmw-product-wrapper .bmw-product-widget-section .bmw-product-widget-info {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.bmw-product-wrapper .bmw-product-widget-section .bmw-product-widget-info strong {
+  color: #e41a1a;
+}
+.bmw-product-wrapper .bmw-product-widget-section .bmw-product-widget-info p {
+  color: #929292;
+}
+.bmw-product-wrapper .bmw-product-widget-section .bmw-product-widget {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* END Product */
+
+/* award */
+.bmw-faq-wrapper,
+.bmw-trustpilot-wrapper,
+.bmw-health-wrapper,
+.bmw-award-wrapper{
+  background: linear-gradient( 
+82.25deg
+, #EE722B 0%, #b8e866 97.92%);
+}
+#AwardSlider .item {
+  position: relative;
+}
+#AwardSlider .item img {
+  border-radius: 10px;
+}
+#AwardSlider .item:after {
+  background-color: rgb(0 0 0 / 45%);
+  position: absolute;
+  content: '';
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.bmw-award-wrapper .bmw-section-heading p {
+  color: #fff;
+  max-width: 630px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.bmw-award-wrapper .bmw-section-heading h4 {
+  color: #fff;
+}
+/* END award */
+
+/* Health */
+.bmw-health-wrapper {
+  position: relative;
+  padding-bottom: 140px;
+}
+.bmw-health-wrapper .bmw-health-widget h4 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: 'Alata', sans-serif;
+}
+.bmw-health-wrapper .bmw-health-widget p {
+  color: #fff;
+  max-width: 945px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.bmw-health-wrapper {
+  position: relative;
+}
+.bmw-health-wrapper svg {
+  width: 100%;
+  position: absolute;
+  bottom: -21px;
+  z-index: 99999;
+}
+
+
+/* Trustpilot */
+.bmw-trustpilot-wrapper {
+  background: linear-gradient( 
+82.25deg
+, #b8e866 0%, #ee722b 97.92%);
+}
+.bmw-trustpilot-wrapper .bmw-product-widget-section {
+  background-color: transparent !important;
+  padding: 0;
+}
+.bmw-trustpilot-wrapper .bmw-product-widget h4 {
+  color: #fff;
+}
+.bmw-trustpilot-wrapper .bmw-product-widget ul.mwb-list-about li {
+  color: #fff !important;
+}
+.bmw-attend-wrapper .bmw-product-widget-img img {
+  max-width: 380px;
+}
+.bmw-attend-wrapper .bmw-product-widget {
+  align-items: center;
+}
+
+/* END Trustpilot */
+
+
+/* faq */
+.bmw-faq-wrapper .bmw-faq-widget h2 button {
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+  border: 0;
+  padding: 14px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.bmw-faq-wrapper .bmw-faq-widget h2 {
+  border-bottom: solid 1px #eaeaea;
+}
+.bmw-faq-wrapper .bmw-faq-widget h2 button {
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  border: 0;
+  padding: 14px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+  font-weight: 500;
+  font-family: 'Alata', sans-serif;
+  text-align: left;
+}
+.bmw-faq-wrapper .accordion-item {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.bmw-faq-wrapper .bmw-faq-widget .accordion-body {
+  padding: 10px 20px;
+}
+.bmw-faq-wrapper .bmw-section-heading h4 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+.bmw-faq-wrapper .bmw-faq-widget .bmw-info {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #fff;
+  margin-top: 40px;
+}
+
+
+
+/* client */
+.bmw-client-wrapper .mwb-client-feedback {
+  box-shadow: 0px 0px 14px 0px #e8e8e8;
+  margin: 10px 14px;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.bmw-client-wrapper .owl-item {
+  height: 340px !important;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.bmw-client-wrapper .owl-item .item {
+  height: 95%;
+}
+.bmw-client-wrapper .mwb-client-feedback .mwb-client-footer {
+  padding: 6px 15px 25px 15px;
+  background: linear-gradient(
+89.74deg
+, #EE722B 1.1%, #B8E866 99.77%);
+  position: relative;
+}
+.bmw-client-wrapper .mwb-client-feedback .mwb-client-content {
+  padding: 25px 15px;
+}
+.bmw-client-wrapper .mwb-client-feedback .mwb-client-footer img {
+  position: absolute;
+  top: -38px;
+  left: 0;
+}
+.bmw-client-wrapper .mwb-client-feedback .mwb-client-footer {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.bmw-client-wrapper .mwb-client-feedback .mwb-client-footer h4 {
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.bmw-client-wrapper .mwb-client-feedback .mwb-client-content p {
+  color: #a5a5a5;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.bmw-client-wrapper .mwb-client-feedback .mwb-client-content svg {
+  margin-bottom: 17px;
+}
+
+/* faq */
+.bmw-video-wrapper {
+  background: #ffffff00 !important;
+}
+.bmw-video-wrapper .bmw-section-heading h4 {
+  color: #000;
+}
+#videoSlider .item {
+  margin-bottom: 30px;
+}
+#videoSlider .item h4 {
+  font-size: 18px;
+}
+
+.bmw-signup-wrapper {
+  background-color: #f2973c;
+  text-align: center;
+}
+.bmw-signup-wrapper .bmw-signup-widget h4 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+/* footer */
+
+ .main-footer {
+  background-color: #fff;
+  padding: 40px 0px;
+}
+.main-footer .f-widget {
+  text-align: center;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-footer .f-widget .f-logo img {
+  max-width: 210px;
+}
+.main-footer .mwb-custom-paragraph-fotter {
+  color: #000;
+}
+.main-footer .mwb-custom-paragraph-fotter a {
+  color: #f2973c;
+}
+
+/* Footer End */

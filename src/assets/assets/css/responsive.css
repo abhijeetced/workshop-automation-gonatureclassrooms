@@ -35,35 +35,35 @@
     font-size: 20px;
     font-family: 'Alata', sans-serif;
     margin-bottom: 40px;
-}
+  }
 
   .bmw-banner .bmw-widget-mobile-none a,
   .bmw-banner .bmw-widget-mobile-none p {
     display: none;
-}
+  }
   .main-header .navbar-collapse,
   .main-header button.navbar-toggler {
     display: none;
-}
-.main-header .navbar {
-  display: block;
-  text-align: center;
-}
+  }
+  .main-header .navbar {
+    display: block;
+    text-align: center;
+  }
 
-.bmw-banner{
-  padding-top: 0px;
-}
-.bmw-banner .bmw-widget h1 {
-  font-family: 'Alata', sans-serif;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 37px;
-  color: #ffffff;
-  margin-top: 30px;
-}
-.main-logo .navbar-brand img.desktop-logo {
-  display: none;
-}
+  .bmw-banner{
+    padding-top: 0px;
+  }
+  .bmw-banner .bmw-widget h1 {
+    font-family: 'Alata', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 37px;
+    color: #ffffff;
+    margin-top: 30px;
+  }
+  .main-logo .navbar-brand img.desktop-logo {
+    display: none;
+  }
   .bmw-health-wrapper svg,
   .banner-svg-btm svg,
   .bmw-client-wrapper .mwb-client-feedback .mwb-client-footer img {
@@ -111,7 +111,7 @@
   .bmw-client-wrapper .mwb-client-feedback {
     box-shadow: 0px 0px;
     border: solid 1px #ccc;
-}
+  }
 }
 @media only screen and (max-width: 600px) {
   .bmw-client-wrapper .owl-item{
@@ -133,5 +133,8 @@
   .bmw-banner .bmw-widget iframe {
     border-radius: 10px;
     height: auto;
+}
+.bmw-product-wrapper .bmw-product-widget-section:nth-child(odd) .row {
+  flex-direction: column-reverse;
 }
 }
