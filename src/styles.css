@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css';
+@import '../node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css';
 :root{
   --primary: #249c74;
   --secondary: #249c74;
