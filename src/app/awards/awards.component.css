@@ -1,0 +1,62 @@
+::ng-deep.owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50% !important;
+    background-color: var(--secondary) !important;
+  }
+  ::ng-deep.owl-dots .owl-dot.active {
+    width: 15px;
+    height: 15px;
+  }
+  ::ng-deep.owl-prev:after {
+    content: "\f053" !important;
+    font-weight: bold;
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #4c4c4c;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+  }
+  
+  ::ng-deep.owl-prev {
+    left: -28px;
+    border: solid 1px #dedede !important;
+    z-index: 999;
+  }
+  ::ng-deep.owl-next {
+    right: -28px;
+    border: solid 1px #dedede !important;
+    z-index: 999;
+  }
+  ::ng-deep.owl-nav div{
+    font-size: 0;
+  }
+  
+  ::ng-deep.owl-next:after {
+    content: "\f054" !important;
+    font-weight: bold;
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #4c4c4c;
+    position: absolute;
+    top: 13px;
+    left: 15px;
+  }
+  ::ng-deep.owl-nav div {
+    background-color: #fff !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    position: absolute;
+    top: 50%;
+    outline: none;
+  }
+
+  .bmw-client-wrapper ::ng-deep .owl-item {
+    height: 340px !important;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  .bmw-client-wrapper ::ng-deep .owl-item .item {
+    height: 95%;
+  }

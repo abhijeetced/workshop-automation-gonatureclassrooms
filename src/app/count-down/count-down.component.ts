@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 // RxJS v6+
 import { timer, Subscription } from 'rxjs';
+import { WebinarService } from '../webinar.service';
 @Component({
   selector: 'gonature-workshop-count-down',
   templateUrl: './count-down.component.html',
@@ -17,12 +18,12 @@ export class CountDownComponent implements OnInit,OnDestroy {
   schedule:Date = new Date();
   loaded:boolean;
   subscription = new Subscription();
-  constructor(private db: AngularFirestore){}
+  constructor(private db: AngularFirestore,private w:WebinarService){}
 
   ngOnInit(){
     const subsciption = this.db.collection('config').valueChanges().subscribe((webinars:IWEBINAR[]) => {
-
       this.webinar = webinars[0];
+      this.w.webinar = this.webinar;
       this.constants = {
         day      : 1000 * 60 * 60 * 24,
         minute   : 1000 * 60,

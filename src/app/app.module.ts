@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule , DomSanitizer} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
@@ -8,12 +8,18 @@ import { CountDownComponent } from './count-down/count-down.component';
 import { AwardsComponent } from './awards/awards.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { ReviewComponent } from './reviews/review/review.component';
+// import {IvyCarouselModule} from 'angular-responsive-carousel';
 @NgModule({
   declarations: [
     AppComponent,
     CountDownComponent,
-    AwardsComponent
+    AwardsComponent,
+    ReviewsComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +27,9 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     AngularFireDatabaseModule,
     CarouselModule,
     BrowserAnimationsModule,
-    IvyCarouselModule
+    // IvyCarouselModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
