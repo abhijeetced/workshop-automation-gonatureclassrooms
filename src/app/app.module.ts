@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ReviewComponent } from './reviews/review/review.component';
+import { BannerComponent } from './banner/banner.component';
 // import {IvyCarouselModule} from 'angular-responsive-carousel';
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ReviewComponent } from './reviews/review/review.component';
     CountDownComponent,
     AwardsComponent,
     ReviewsComponent,
-    ReviewComponent
+    ReviewComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
