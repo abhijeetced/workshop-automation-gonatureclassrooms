@@ -1,0 +1,110 @@
+    <!-- FAQ -->
+    <section class="bmw-faq-wrapper section-padding">
+      <div class="container">
+        <div class="bmw-section-heading">
+          <h4>Got More Questions?</h4>
+        </div>
+        <div class="bmw-faq-widget">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="bmwAccordion01">
+                <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapse01" aria-expanded="true" aria-controls="collapse01">
+                  Q) When does the "Naturopathy Healing System" Workshop start?
+                </button>
+              </h2>
+              <div id="collapse01" class="accordion-collapse collapse show" aria-labelledby="bmwAccordion01" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>A) The Naturopathy workshop starts on Sunday at 6:00 PM and it will end at 8:00 PM. It will be live on zoom.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="bmwAccordion02">
+                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse02" aria-expanded="false" aria-controls="collapse02">
+                  Q) Will I get lifetime access to the video?
+                </button>
+              </h2>
+              <div id="collapse02" class="accordion-collapse collapse" aria-labelledby="bmwAccordion02" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>A) Take a note that this is a Class (Workshop), not an online course. Therefore, you don’t get lifetime access to the sessions’ recording. Everything will be live; hence, no replays & recordings</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="bmwAccordion03">
+                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse03" aria-expanded="false" aria-controls="collapse03">
+                  Q) Will I be able to start my own diet clinic after the certification and earn money?
+                </button>
+              </h2>
+              <div id="collapse03" class="accordion-collapse collapse" aria-labelledby="bmwAccordion03" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>A) The Certificate that you get is for your participation.. Consequently, the workshop does not guarantee any income or job. Instead, it makes you understand the self-healing mechanism of the human body.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="bmwAccordion04">
+                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse04" aria-expanded="false" aria-controls="collapse04">
+                  Q) If I miss the workshop, will my 49/- INR be refunded?
+                </button>
+              </h2>
+              <div id="collapse04" class="accordion-collapse collapse" aria-labelledby="bmwAccordion04" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>A) There is no provision of refunding 49 /- INR in any scenario because the workshop is live. If you are occupied during workshop time, we suggest you not to buy a ticket as there is no option of refunding 49/- INR.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="bmwAccordion05">
+                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse05" aria-expanded="false" aria-controls="collapse05">
+                  Q) I am an established health coach, can I attend this?
+                </button>
+              </h2>
+              <div id="collapse05" class="accordion-collapse collapse" aria-labelledby="bmwAccordion05" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>A) This workshop is for everyone. We welcome all the coaches, doctors, patients, and working professionals.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="bmwAccordion06">
+                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse06" aria-expanded="false" aria-controls="collapse06">
+                  Q) Will the certificate be provided in hard copy or soft copy? If yes, then till when?
+                </button>
+              </h2>
+              <div id="collapse06" class="accordion-collapse collapse" aria-labelledby="bmwAccordion06" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  A) The certificate is provided in a soft copy (PDF) to your registered email ID within 24 hours of course completion.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="bmwAccordion07">
+                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse07" aria-expanded="false" aria-controls="collapse07">
+                  Q) Will you provide us with the 49 days circulation diets & recipes in this workshop?
+                </button>
+              </h2>
+              <div id="collapse07" class="accordion-collapse collapse" aria-labelledby="bmwAccordion07" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>A) The circulation diet is a very long scientific study & diet plan. Therefore, explaining in merely 2 hours is not possible. Instead, we will tell you what a circulation diet is, how it works & what results it can give. Hence, we do not provide 49 days 49 different diets (the circulation diet) in the workshop.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" *ngFor="let faq of faqs;index as i">
+              <h2 class="accordion-header" id="bmwAccordion{{i+7}}">
+                <button class="accordion-button collapsed" type="button" data-toggle="collapse" [attr.data-target]="'#collapse'+(i+7)" aria-expanded="false" [aria-controls]="'collapse'+(i+7)">
+                  Q) {{faq.question}}
+                </button>
+              </h2>
+              <div id="collapse{{i+7}}" class="accordion-collapse collapse" aria-labelledby="bmwAccordion{{i+7}}" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>A) {{faq.answer}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="bmw-info"><strong>Final Note:</strong> This workshop will help you to know where you are in terms of your health & where you can reach. You will come to know the difference in diseases expenditure & health expenditure.</p>
+        </div>
+      </div>
+    </section>
+    <!-- END FAQ -->

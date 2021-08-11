@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open --port 4300",
-    "build": "ng build",
+    "build": "node --max_old_space_size=6144 ./node_modules/@angular/cli/bin/ng build --base-href=/workshop --vendor-chunk=true --aot --output-hashing=all --build-optimizer --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
