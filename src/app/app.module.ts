@@ -15,7 +15,7 @@ import { ReviewComponent } from './reviews/review/review.component';
 import { BannerComponent } from './banner/banner.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { TrustpilotComponent } from './trustpilot/trustpilot.component';
-// import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { BannerMobileComponent } from './banner-mobile/banner-mobile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +25,8 @@ import { TrustpilotComponent } from './trustpilot/trustpilot.component';
     ReviewComponent,
     BannerComponent,
     FaqsComponent,
-    TrustpilotComponent
+    TrustpilotComponent,
+    BannerMobileComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +34,6 @@ import { TrustpilotComponent } from './trustpilot/trustpilot.component';
     AngularFireDatabaseModule,
     CarouselModule,
     BrowserAnimationsModule,
-    // IvyCarouselModule
     HttpClientModule,
     FormsModule
   ],
