@@ -14,6 +14,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { ReviewComponent } from './reviews/review/review.component';
 import { BannerComponent } from './banner/banner.component';
 import { FaqsComponent } from './faqs/faqs.component';
+import { TrustpilotComponent } from './trustpilot/trustpilot.component';
 // import {IvyCarouselModule} from 'angular-responsive-carousel';
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FaqsComponent } from './faqs/faqs.component';
     ReviewsComponent,
     ReviewComponent,
     BannerComponent,
-    FaqsComponent
+    FaqsComponent,
+    TrustpilotComponent
   ],
   imports: [
     BrowserModule,
