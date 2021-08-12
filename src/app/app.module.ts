@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { BrowserModule , DomSanitizer} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
@@ -16,6 +17,7 @@ import { BannerComponent } from './banner/banner.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { TrustpilotComponent } from './trustpilot/trustpilot.component';
 import { BannerMobileComponent } from './banner-mobile/banner-mobile.component';
+// import { YtVideoModule } from 'yt-optimized-video';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { BannerMobileComponent } from './banner-mobile/banner-mobile.component';
     BannerComponent,
     FaqsComponent,
     TrustpilotComponent,
-    BannerMobileComponent
+    BannerMobileComponent,
+    CommonModule
   ],
   imports: [
     BrowserModule,
