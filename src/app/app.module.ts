@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { BrowserModule , DomSanitizer} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
@@ -28,8 +28,7 @@ import { BannerMobileComponent } from './banner-mobile/banner-mobile.component';
     BannerComponent,
     FaqsComponent,
     TrustpilotComponent,
-    BannerMobileComponent,
-    CommonModule
+    BannerMobileComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +39,7 @@ import { BannerMobileComponent } from './banner-mobile/banner-mobile.component';
     HttpClientModule,
     FormsModule
   ],
+  exports:[TrustpilotComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
