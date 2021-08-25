@@ -18,6 +18,7 @@ import { FaqsComponent } from './faqs/faqs.component';
 import { TrustpilotComponent } from './trustpilot/trustpilot.component';
 import { BannerMobileComponent } from './banner-mobile/banner-mobile.component';
 import { YtVideoModule } from 'yt-optimized-video';
+import { MailCtaComponent } from './components/mail-cta/mail-cta.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { YtVideoModule } from 'yt-optimized-video';
     BannerComponent,
     FaqsComponent,
     TrustpilotComponent,
-    BannerMobileComponent
+    BannerMobileComponent,
+    MailCtaComponent
   ],
   imports: [
     BrowserModule,
