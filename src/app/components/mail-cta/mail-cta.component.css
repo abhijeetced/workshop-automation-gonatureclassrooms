@@ -140,7 +140,7 @@
     right: 0;
 }
 
-#_form_13_ input[type="text"],
+#_form_13_ input[type="tel"],
 #_form_13_ input[type="date"],
 #_form_13_ textarea {
     padding: 6px;
@@ -299,7 +299,7 @@
     clear: left;
 }
 
-#_form_13_ ._form_element input[type="text"],
+#_form_13_ ._form_element input[type="tel"],
 #_form_13_ ._form_element input[type="date"],
 #_form_13_ ._form_element select,
 #_form_13_ ._form_element textarea:not(.g-recaptcha-response) {
@@ -319,7 +319,7 @@
     float: left;
 }
 
-#_form_13_ ._inline-style input[type="text"] {
+#_form_13_ ._inline-style input[type="tel"] {
     width: 150px;
 }
 
@@ -348,7 +348,7 @@
     margin-bottom: 10px;
 }
 
-#_form_13_ input[type="text"]._has_error,
+#_form_13_ input[type="tel"]._has_error,
 #_form_13_ textarea._has_error {
     border: #f37c7b 1px solid;
 }
@@ -432,7 +432,7 @@
     z-index: 10000001 !important;
 }
 
-#_form_13_ input[type="text"].datetime_date {
+#_form_13_ input[type="tel"].datetime_date {
     width: 69%;
     display: inline;
 }
@@ -484,7 +484,7 @@
     }
     #_form_13_ ._form-element,
     #_form_13_ ._inline-style,
-    #_form_13_ input[type="text"],
+    #_form_13_ input[type="tel"],
     #_form_13_ label,
     #_form_13_ p,
     #_form_13_ textarea:not(.g-recaptcha-response) {
@@ -518,7 +518,7 @@
         max-width: 100%;
         height: auto !important;
     }
-    #_form_13_ input[type="text"] {
+    #_form_13_ input[type="tel"] {
         padding-left: 10px;
         padding-right: 10px;
         font-size: 16px;
@@ -578,7 +578,7 @@
     display: inline-block;
 }
 
-#_form_13_._inline-style input[type="text"],
+#_form_13_._inline-style input[type="tel"],
 #_form_13_._inline-style input[type="date"] {
     padding: 10px 12px;
 }
