@@ -9,7 +9,7 @@ export class FaqsComponent implements OnInit {
   faqs: IFAQ[] = [
     {
       question: `When does the "Naturopathy Breakthrough Mastery" Webinar start?`,
-      answer  : `the naturopathy workshop takes place wverday except on saturdays. the actual cost in 499/- but it is Rs 99/- for only two days.`
+      answer  : `The naturopathy webinar takes place everday except on Saturdays. the actual cost in 499/- but it is Rs 99/- for only two days.`
     },
     {
       question: `Will I get lifetime access to the video?`,
@@ -17,31 +17,28 @@ export class FaqsComponent implements OnInit {
     },
     {
       question: `Will I be able to start my own diet clinic after the certification and earn money?`,
-      answer  : `The Certificate that you get is for your participation.. Consequently, the workshop does not guarantee any income or job. Instead, it makes you understand the self-healing mechanism of the human body.`
+      answer  : `The Certificate that you get is for your participation.. Consequently, the webinar does not guarantee any income or job. Instead, it makes you understand the self-healing mechanism of the human body.`
     },
     {
-      question: "If I miss the workshop, will my 99/- INR be refunded?",
-      answer  : "If you are occupied during workshop time, we suggest you not to buy a ticket as there is no option of refunding 99/- INR."
+      question: "If I miss the webinar, will my 99/- INR be refunded?",
+      answer  : "If you are occupied during webinar time, we suggest you not to buy a ticket as there is no option of refunding 99/- INR."
     },
     {
       question: "I am an established health coach, can I attend this?",
       answer  : "This Webinar is for everyone. We welcome all the coaches, doctors, patients, and working professionals."
     },
+   
     {
-      question: "Will the certificate be provided in hard copy or soft copy? If yes, then till when?",
-      answer  : "The certificate is provided in a soft copy (PDF) to your registered email ID within 24 hours of course completion."
+      question: "What if I have questions during the webinar?",
+      answer  : "In the end of the webinar we have a dedicated 30 minute time to answer your questions."
     },
     {
-      question: "What if I have questions during the workshop?",
-      answer  : "In the end of the workshop we have a dedicated time to answer your questions."
+      question: "With one ticket how many person can attend webinar?",
+      answer  : "Only one person is allowed one ticket"
     },
     {
-      question: "With one ticket how many person can attend workshop?",
-      answer  : "One person with one ticket"
-    },
-    {
-      question: "What kind of 8 bonuses you are providing?",
-      answer  : "we will provide 2 free bonuses- 1. learn power breathing. 2. certificate of participation"
+      question: "What kind of 8 bonus you are providing?",
+      answer  : "we will provide you with one bumper. i.e. a session on power breathing that will revolutionize your entire breathing mechanism."
     }
   ];
   constructor() { }

@@ -17,7 +17,6 @@ export class AwardsComponent implements OnInit  {
     {id:"2",alt:"1",title:"Image 01",src:"assets/images/gonature_award_two.jpg"},
     {id:"3",alt:"1",title:"Image 01",src:"assets/images/gonature_award_three.jpg"},
     {id:"4",alt:"1",title:"Image 01",src:"assets/images/gonature_award_four.jpg"},
-    {id:"5",alt:"1",title:"Image 01",src:"assets/images/gonature_award_one.jpg"},
   ]
 
   customOptions: OwlOptions = {
