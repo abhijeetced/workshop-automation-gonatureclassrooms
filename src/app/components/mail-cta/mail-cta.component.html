@@ -1,14 +1,15 @@
 <div class="input-group" style="font-family: auto;">
 
-  <form id="_form_13_" ngForm class="_form _form_13 _inline-form _dark" novalidate>
+  <form id="_form_13_" *ngIf="form" [formGroup]="form" class="_form _form_13 _inline-form _dark" novalidate>
     <div class="_form-content">
       <div class="_form_element _x35783515 _full_width " >
+
         <div class="_field-wrapper" >
-          <input  type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="email" [disabled]="waiting"  [(ngModel)]="mobile" name="mobile" placeholder="Type your mobile number" required/>
+          <input [ngStyle]="{'border': (form.invalid) ? 'border: 2px solid green' : 'border: 2px solid red'}" formControlName="mobile"  type="tel" id="email" name="mobile" placeholder="Type your mobile number" required/>
         </div>
       </div>
       <div class="_button-wrapper _full_width">
-        <button id="_form_13_submit" class="_submit" (click)="join(mobile)">
+        <button id="_form_13_submit" [disabled]="form.invalid" class="_submit" (click)="join()">
           {{waiting ? "Please wait..." : "Join Now"}}
         </button>
       </div>

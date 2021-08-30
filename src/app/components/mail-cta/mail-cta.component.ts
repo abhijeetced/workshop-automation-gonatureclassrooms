@@ -8,19 +8,22 @@ window as any;
   styleUrls: ['./mail-cta.component.css']
 })
 export class MailCtaComponent implements OnInit {
-  mobile:string;
   waiting:boolean;
-  constructor(private db: AngularFirestore) { }
+  form:FormGroup;
+  constructor(private db: AngularFirestore,private fb:FormBuilder) {
+    this.form = this.fb.group({
+      mobile:['',[Validators.required,Validators.minLength(10),Validators.maxLength(13)]],
+      date  :[new Date()]
+    });
+  }
 
   ngOnInit(): void {}
 
-  join(mobile:string){
+  join(){
     this.waiting = true;
-    this.db.collection('mobile_numbers').add({mobile:mobile}).then((v)=>{
+    this.db.collection('mobile_numbers').add(this.form.value).then((v)=>{
       window.location.href = "https://pages.razorpay.com/gdiet";
-      this.waiting = false;
     });
-
   }
 
 }

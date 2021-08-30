@@ -10,7 +10,7 @@ import { AwardsComponent } from './awards/awards.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ReviewComponent } from './reviews/review/review.component';
 import { BannerComponent } from './banner/banner.component';
@@ -40,6 +40,7 @@ import { MailCtaComponent } from './components/mail-cta/mail-cta.component';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     YtVideoModule
   ],
   exports:[TrustpilotComponent],

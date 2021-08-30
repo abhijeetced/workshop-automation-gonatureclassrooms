@@ -617,3 +617,11 @@
         margin-top: -18px !important;
     }
 }
+
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999 !important;
+  background-color: #cccccc !important;
+  color: #666666 !important;
+}
