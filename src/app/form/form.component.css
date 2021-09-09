@@ -9,3 +9,15 @@
   color: #f9f9f9;
   line-height: 25px;
 }
+.inner-box h4 {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  .inner-box {
+    margin-top: 30px;
+  }
+}
