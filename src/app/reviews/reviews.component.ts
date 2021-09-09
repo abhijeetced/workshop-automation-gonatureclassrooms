@@ -56,6 +56,9 @@ export class ReviewsComponent implements OnInit {
 
 
   }
+  url(index, item){
+    return item.url;
+  }
 
 }
 
