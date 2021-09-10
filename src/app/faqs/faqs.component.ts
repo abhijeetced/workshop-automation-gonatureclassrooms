@@ -9,7 +9,7 @@ export class FaqsComponent implements OnInit {
   faqs: IFAQ[] = [
     {
       question: `When does the "Naturopathy Breakthrough Mastery" Webinar start?`,
-      answer  : `The naturopathy webinar takes place everday except on Saturdays. the actual cost in 499/- but it is Rs 99/- for only two days.`
+      answer  : `The naturopathy webinar takes place every Monday, Wednesday and friday. the actual cost in 499/- but it is Rs 99/- for only two days.`
     },
     {
       question: `Will I get lifetime access to the video?`,
@@ -17,7 +17,7 @@ export class FaqsComponent implements OnInit {
     },
     {
       question: `Will I be able to start my own diet clinic after the certification and earn money?`,
-      answer  : `The Certificate that you get is for your participation.. Consequently, the webinar does not guarantee any income or job. Instead, it makes you understand the self-healing mechanism of the human body.`
+      answer  : `The webinar does not guarantee any income or job. Instead, it makes you understand the self-healing mechanism of the human body.`
     },
     {
       question: "If I miss the webinar, will my 99/- INR be refunded?",
@@ -36,10 +36,6 @@ export class FaqsComponent implements OnInit {
       question: "With one ticket how many person can attend webinar?",
       answer  : "Only one person is allowed one ticket"
     },
-    {
-      question: "What kind of 8 bonus you are providing?",
-      answer  : "we will provide you with one bumper. i.e. a session on power breathing that will revolutionize your entire breathing mechanism."
-    }
   ];
   constructor() { }
 

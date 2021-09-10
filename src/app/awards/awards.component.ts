@@ -23,11 +23,9 @@ export class AwardsComponent implements OnInit  {
     loop: false,
     autoplay: true,
     dots: false,
-    autoHeight: true,
-    autoWidth: true,
     items: 4,
     nav: true,
-    margin: 20,
+    margin: 15,
     responsive: {
       0: {
         items: 1,
