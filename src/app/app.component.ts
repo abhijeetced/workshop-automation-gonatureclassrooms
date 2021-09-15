@@ -1,7 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { of as observableOf } from 'rxjs';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { MailCtaComponent } from './components/mail-cta/mail-cta.component';
+import { WebinarService } from './webinar.service';
+import { MatSidenav } from '@angular/material/sidenav';
+import {
+  getSupportedInputTypes,
+  Platform,
+  supportsPassiveEventListeners,
+  supportsScrollBehavior,
+} from '@angular/cdk/platform';
 
 @Component({
   selector: 'gonature-workshop-root',
@@ -9,9 +18,10 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  showFiller = false;
+  @ViewChild("drawer") drawer:MatSidenav;
+  constructor(public platform: Platform,private webinbar:WebinarService){}
 
-  constructor(private db: AngularFirestore){}
-  
 
   clientslider: OwlOptions = {
     loop: true,
@@ -37,7 +47,9 @@ export class AppComponent implements OnInit {
     }
   }
   ngOnInit(){
-
+    this.webinbar.toggled.subscribe(()=>{
+      this.drawer.toggle();
+    });
   }
 }
 

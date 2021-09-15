@@ -37,16 +37,7 @@ export class ReviewsComponent implements OnInit {
       url:"https://www.youtube.com/embed/MW2_55Fx5eU",
       title:"Satish Kumar Reversed His 20 Years Old Constipation (Trailer)"
     },
-    {
-      thumbnail:"assets/images/thumbnails/Ef4xB5BX-qs.png",
-      url:"https://www.youtube.com/embed/Ef4xB5BX-qs",
-      title:"Tarun Bhargava Reversed His Hypertension and Lost 27 kg Weight (Trailer)"
-    },
-    {
-      thumbnail:"assets/images/thumbnails/_OhE_LDiYI4.png",
-      url:"https://www.youtube.com/embed/_OhE_LDiYI4",
-      title:"Bhavesh Reversed 8 Years Old Sciatica (Trailer)"
-    }
+
   ];
 
   constructor(public sanitizer: DomSanitizer)   { }

@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/assets/css/bootstrap.css",
               "src/assets/css/responsive.css",
               "src/styles.css"
