@@ -12,14 +12,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ReviewComponent } from './reviews/review/review.component';
-// import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { LeadformdialogComponent } from './leadformdialog/leadformdialog.component';
+import { CallToActionComponent } from './call-to-action/call-to-action.component';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
     CountDownComponent,
     AwardsComponent,
     ReviewsComponent,
-    ReviewComponent
+    ReviewComponent,
+    LeadformdialogComponent,
+    CallToActionComponent
   ],
   imports: [
     BrowserModule,
@@ -27,11 +31,12 @@ import { ReviewComponent } from './reviews/review/review.component';
     AngularFireDatabaseModule,
     CarouselModule,
     BrowserAnimationsModule,
-    // IvyCarouselModule
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[LeadformdialogComponent]
 })
 export class AppModule { }
