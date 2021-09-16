@@ -54,6 +54,9 @@ border-bottom: 0;
     .bmw-product-gift-widget-wrapper .col-lg-3:nth-child(6){
         border-bottom: solid 3px #ccc;
     }
+    .fullWidth{
+      width: 100vw !important;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -61,10 +64,12 @@ border-bottom: 0;
         border-right: 0;
         border-bottom: solid 3px #ccc !important;
     }
+    .fullWidth{
+      width: 100vw !important;
+    }
 }
 .halfWidth{
   width: 50vw;
+  max-width: 550px !important;
 }
-.fullWidth{
-  width: 90vw;
-}
+

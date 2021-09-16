@@ -22,6 +22,10 @@ import { MailCtaComponent } from './components/mail-cta/mail-cta.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {PlatformModule} from '@angular/cdk/platform';
+import { LeadformComponent } from './leadform/leadform.component';
+import { LeadformdialogComponent } from './components/mail-cta/leadformdialog/leadformdialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +37,9 @@ import {PlatformModule} from '@angular/cdk/platform';
     FaqsComponent,
     TrustpilotComponent,
     BannerMobileComponent,
-    MailCtaComponent
+    MailCtaComponent,
+    LeadformComponent,
+    LeadformdialogComponent
   ],
   imports: [
     BrowserModule,
@@ -47,11 +53,13 @@ import {PlatformModule} from '@angular/cdk/platform';
     YtVideoModule,
     MatSidenavModule,
     MatExpansionModule,
-    PlatformModule
+    PlatformModule,
+    MatDialogModule
 
   ],
   exports:[TrustpilotComponent],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[LeadformdialogComponent]
 })
 export class AppModule { }

@@ -31,3 +31,7 @@
         height: 44vw;
     }
 }
+.bg{
+  background: url("https://i.ibb.co/t8B5Y8L/landing-page-girl.png") bottom left /
+    contain no-repeat;
+}

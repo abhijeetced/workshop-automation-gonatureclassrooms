@@ -1,9 +1,19 @@
 
 
-<mat-drawer-container class="example-container">
-  <mat-drawer #drawer class="example-sidenav" style="height: 100vh;" position="end" mode="over">
-    <div [ngClass]="{'fullWidth': platform.ANDROID,'halfWidth': !platform.ANDROID}">
-      <p>Auto-resizing cool {{platform.ANDROID}}</p>
+<mat-drawer-container>
+  <mat-drawer #drawer style="height: 100vh;" position="end" mode="over">
+    <div [ngClass]="{'fullWidth': platform.ANDROID,'halfWidth': !platform.ANDROID}" style="background: linear-gradient(82.25deg, #EE722B 0%, #b8e866 97.92%);">
+      <header class="main-header text-center" style="background-color: none;" >
+        <div class="container">
+          <div class="main-logo">
+            <a class="navbar-brand" target="_blank" href="https://gonatureclassrooms.org/">
+              <img class="mobile-logo" src="assets/images/f-go-nature.png" alt="logo">
+            </a>
+          </div>
+        </div>
+      </header>
+      <gonature-workshop-leadform></gonature-workshop-leadform>
+
     </div>
   </mat-drawer>
   <div class="example-sidenav-content" style="height: 100vh;">
@@ -49,7 +59,7 @@
       <section class="bmw-product-wrapper">
           <div class="container">
               <div class="bmw-section-heading">
-                  <h4>ABOUT NATUROPATHY HEALING MASTERY</h4>
+                  <h4>Features of The Webinar</h4>
                   <p>Here are the 6 secrets you're gonna master in this 90-minutes webinar!</p>
               </div>
           </div>
@@ -65,10 +75,9 @@
                                   <li>If your circadian rhythm is disrupted, it will restrict your body's systems from functioning optimally.</li>
                                   <li>the changes in circadian rhythm can cause sleep disorder. amd may lead to other chronic health conditions, such as obesity. depression. bipolar disorder. and seasonal affective disorder</li>
                                   <li>In this webinar we will tell you what circadian rhythm is and why it is important.</li>
-                                  <li>you will master the art of how to unconsciously mange your circadian rhythm</li>
-                                  <li>Moreover, you'll know the secret of how to heal with your circadian rhythm in this webinar.</li>
-                                  <li>We will ensure that you use your 24 hours in healing.</li>
+
                               </ul>
+                              <gonature-workshop-mail-cta surface="dark" title="Learn More"></gonature-workshop-mail-cta>
                           </div>
                       </div>
                       <div class="col-md-6">
@@ -97,39 +106,15 @@
                                   <li>We can know the body type we fit into based on the five elements; wood, fire, water, earth or metal.</li>
                                   <li>Eating according to your own elements can nourish your body. strengthen your muscles and optimize your health and well-being. </li>
                                   <li>It is essential to know which elements are good for you and not to lead a healthy life.</li>
-                                  <li>Balancing these elements is very intuitive. So, we will reveal the secret of how to eat as per the elements in this webinar.</li>
-                                  <li>get started with Go Nature Classroom now to unveil the mystery of elements for your ultimate well-being</li>
                               </ul>
+                              <gonature-workshop-mail-cta surface="dark" title="Know More"></gonature-workshop-mail-cta>
                           </div>
                       </div>
                   </div>
               </div>
           </div>
 
-          <div class="bmw-product-widget-section">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-6">
-                          <div class="bmw-product-widget">
-                              <h4>Features of The Webinar</h4>
-                              <ul class="mwb-list-about">
-                                  <li>It is a 90 minutes webinar.</li>
-                                  <li>30 minutes for question/answers</li>
-                                  <li>Learn Power Breathing</li>
-                                  <li>Realisation that Money Cannot Buy Good Health.</li>
-                                  <li>Learn where you're standing in terms of your health.</li>
-                                  <li>Explore what naturopathy can give you.</li>
-                              </ul>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="bmw-product-widget-img">
-                              <img src="assets/images/secrets/features.png" alt="img01" class="img-fluid">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+
       </section>
 
       <!-- Award -->
@@ -278,8 +263,8 @@
       <section class="bmw-signup-wrapper section-padding">
           <div class="container">
               <div class="bmw-signup-widget">
-                  <h4>Are you ready to transform your health?</h4>
-                  <gonature-workshop-mail-cta></gonature-workshop-mail-cta>
+                  <h4>Hurry Up! Seats filling very fast</h4>
+                  <gonature-workshop-mail-cta title="Save My Spot"></gonature-workshop-mail-cta>
               </div>
           </div>
       </section>

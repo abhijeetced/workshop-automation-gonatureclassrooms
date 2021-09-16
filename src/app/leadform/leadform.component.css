@@ -1,0 +1,16 @@
+.halfWidth{
+  width: 50vw;
+  max-width: 550px !important;
+}
+@media only screen and (max-width: 767px) {
+  .fullWidth{
+    width: 100vw !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+
+  .fullWidth{
+    width: 100vw !important;
+  }
+}
