@@ -6,7 +6,7 @@
 <section class="bmw-countdown-wrapper" *ngIf="!(webinar && counter)">
   <div class="container">
     <div class="bmw-section-heading" >
-      <h4>MARK THE WORKSHOP DATE</h4>
+      <h4>MARK THE WEBINAR DATE</h4>
       <h5>DATE IS LOADING</h5>
     </div>
     <div id="countdown">
@@ -23,7 +23,7 @@
 <section class="bmw-countdown-wrapper" *ngIf="webinar && counter">
   <div class="container">
     <div class="bmw-section-heading" >
-      <h4>MARK THE WORKSHOP DATE</h4>
+      <h4>MARK THE WEBINAR DATE</h4>
       <h5>{{schedule | date:'medium'}}</h5>
     </div>
     <div id="countdown" *ngIf="counter">
