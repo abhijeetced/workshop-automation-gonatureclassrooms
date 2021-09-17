@@ -20,7 +20,9 @@ export class MailCtaComponent implements OnInit {
   openDialog() {
     const dialogRef = this.dialog.open(LeadformdialogComponent,{
       width: '550px',
-      data: {}
+      data: {},
+      panelClass: 'mailctadialog'
+
     });
 
     dialogRef.afterClosed().subscribe(result => {

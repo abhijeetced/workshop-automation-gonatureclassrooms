@@ -60,3 +60,12 @@
   .bmw-client-wrapper ::ng-deep .owl-item .item {
     height: 95%;
   }
+
+  @media only screen and (max-width: 600px) {
+    .owl-next {
+      right: 0px;
+    }
+    .owl-prev {
+      right: 0px;
+    }
+  }

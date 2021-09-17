@@ -1,0 +1,14 @@
+.accordion-header {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.accordion-header::ng-deep mat-expansion-panel-header {
+    margin: 0;
+    padding: 14px 16px;
+    border-bottom: solid #ccc 1px;
+    border-radius: 0;
+    height: auto;
+}
+.mat-expansion-panel-header[aria-expanded="true"] ~ .mat-expansion-panel-content {
+    padding-top: 16px;
+}
