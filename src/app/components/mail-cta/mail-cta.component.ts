@@ -41,6 +41,7 @@ export class MailCtaComponent implements OnInit {
       width: this.width,
       height: this.height,
       data: {}
+      panelClass: 'mailctadialog'
     });
 
     dialogRef.afterClosed().subscribe(result => {

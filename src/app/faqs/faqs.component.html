@@ -7,8 +7,8 @@
         <div class="bmw-faq-widget">
 
           <mat-accordion class="example-headers-align" multi>
-            <mat-expansion-panel *ngFor="let faq of faqs;index as i">
-              <mat-expansion-panel-header>
+            <mat-expansion-panel class="accordion-header" *ngFor="let faq of faqs;index as i">
+              <mat-expansion-panel-header class="accordion-header">
                 <mat-panel-title> Q) {{faq.question}} </mat-panel-title>
               </mat-expansion-panel-header>
               A) {{faq.answer}}
