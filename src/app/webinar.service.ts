@@ -9,8 +9,8 @@ export class WebinarService {
   toggleSubject = new Subject();
   toggled = this.toggleSubject.asObservable();
   constructor() { }
-  toggle(){
-    this.toggleSubject.next();
+  toggle(v:boolean){
+    this.toggleSubject.next(v);
   }
 
 }
