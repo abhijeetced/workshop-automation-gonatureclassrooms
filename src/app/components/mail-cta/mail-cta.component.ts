@@ -4,6 +4,12 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { WebinarService } from '../../webinar.service';
 import { MatDialog } from '@angular/material/dialog';
 import { LeadformdialogComponent } from './leadformdialog/leadformdialog.component';
+import {
+  getSupportedInputTypes,
+  Platform,
+  supportsPassiveEventListeners,
+  supportsScrollBehavior,
+} from '@angular/cdk/platform';
 window as any;
 @Component({
   selector: 'gonature-workshop-mail-cta',
@@ -11,29 +17,44 @@ window as any;
   styleUrls: ['./mail-cta.component.css']
 })
 export class MailCtaComponent implements OnInit {
-  @Input('surface') surface:string
-  @Input('title') title:string
-  constructor(public dialog: MatDialog,private db: AngularFirestore,private webinar:WebinarService) {
+  @Input('surface') surface:string;
+  @Input('title') title:string;
+  supportedInputTypes = Array.from(getSupportedInputTypes()).join(', ');
+  supportsPassiveEventListeners = supportsPassiveEventListeners();
+  supportsScrollBehavior = supportsScrollBehavior();
+  width:string = "550px";
+  height:string = "auto";
+
+  constructor(public dialog: MatDialog,private platform:Platform,private webinar:WebinarService) {
+
+    if(this.platform.ANDROID)
+    {
+      this.width = "100vw";
+      this.height = "auto";
+    }
 
   }
 
   openDialog() {
+    this.webinar.toggle(true);
     const dialogRef = this.dialog.open(LeadformdialogComponent,{
-      width: '550px',
-      data: {},
+      width: this.width,
+      height: this.height,
+      data: {}
       panelClass: 'mailctadialog'
-
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
+      this.webinar.toggle(false);
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
 
   view(){
-    this.webinar.toggle();
+    this.webinar.toggle(true);
   }
 
 }
