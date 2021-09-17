@@ -1,4 +1,4 @@
 
-<button (click)="openDialog()" [ngClass]="{'dark': (surface === 'dark')}" class="btn px-5 py-3 mt-3 mt-sm-0 light" style="border-radius: 30px; ">
+<button mat-button (click)="openDialog()" [ngClass]="{'dark': (surface === 'dark')}" class="btn px-5 py-3 mt-3 mt-sm-0 light" style="border-radius: 30px; ">
   {{title || "Register Now"}}
 </button>

@@ -25,6 +25,7 @@ import {PlatformModule} from '@angular/cdk/platform';
 import { LeadformComponent } from './leadform/leadform.component';
 import { LeadformdialogComponent } from './components/mail-cta/leadformdialog/leadformdialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatSidenavModule,
     MatExpansionModule,
     PlatformModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule
 
   ],
   exports:[TrustpilotComponent],

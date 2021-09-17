@@ -129,6 +129,7 @@ button.owl-next:after {
     text-transform: capitalize;
     margin-bottom: 20px;
     color: #000000;
+    line-height: normal;
 }
 
 .bmw-section-heading p {
