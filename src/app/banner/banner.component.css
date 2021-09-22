@@ -35,3 +35,13 @@
   background: url("https://i.ibb.co/t8B5Y8L/landing-page-girl.png") bottom left /
     contain no-repeat;
 }
+@media only screen and (min-width: 724px) {
+  .banner-img {
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 724px) {
+  .banner-img {
+    background-color: lightblue;
+  }
+}

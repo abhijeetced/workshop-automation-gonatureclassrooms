@@ -55,19 +55,17 @@ export class AppComponent implements OnInit {
     this.webinbar.toggled.subscribe((v)=>{
       if(v)
       {
-        console.log("Unsubscribed");
         this.subscription.unsubscribe();
       }
       else
       {
-        console.log("Subscribed");
         this.subscription.add(this.display.pipe(debounceTime(10*1000)).subscribe((v:any)=>{
           this.cta.openDialog();
         }));
       }
       this.popup.next(true);
     });
-    this.subscription.add(this.display.pipe(debounceTime(10*1000)).subscribe((v:any)=>{
+    this.subscription.add(this.display.pipe(debounceTime(30*1000)).subscribe((v:any)=>{
       this.cta.openDialog();
     }));
   }

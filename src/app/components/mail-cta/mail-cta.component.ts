@@ -38,9 +38,9 @@ export class MailCtaComponent implements OnInit {
   openDialog() {
     this.webinar.toggle(true);
     const dialogRef = this.dialog.open(LeadformdialogComponent,{
-      width: this.width,
-      height: this.height,
-      data: {}
+      "height": this.height,
+      "width": this.width,
+      data: {},
       panelClass: 'mailctadialog'
     });
 
