@@ -22,7 +22,7 @@ export class CountDownComponent implements OnInit,OnDestroy {
 
   ngOnInit(){
     const subsciption = this.db.collection('config').valueChanges().subscribe((webinars:IWEBINAR[]) => {
-      this.webinar = webinars[0];
+      this.webinar = webinars[1];
       this.w.webinar = this.webinar;
       this.constants = {
         day      : 1000 * 60 * 60 * 24,

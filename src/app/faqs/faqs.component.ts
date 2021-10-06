@@ -9,7 +9,7 @@ export class FaqsComponent implements OnInit {
   faqs: IFAQ[] = [
     {
       question: `When does the "Naturopathy Healing System" Webinar start?`,
-      answer  : `The Naturopathy Webinar starts on Sunday at 6:00 PM and it will end at 8:00 PM. It will be live on zoom.`
+      answer  : `The Naturopathy Webinar starts on Sunday at 11:00 AM and it will end at 01:00 PM. It will be live on zoom.`
     },
     {
       question: `Will I get lifetime access to the video?`,

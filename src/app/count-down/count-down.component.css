@@ -32,6 +32,7 @@
     text-align: center;
     font-weight: 600;
   }
+
   /* END countdown */
 
 
@@ -42,6 +43,12 @@
       width: 140px;
       height: 140px;
       padding: 11px 15px 16px 15px;
+    }
+
+  }
+  @media only screen and (min-width: 767px) {
+    .mwb_countdown_ul .mwb_countdown_li span {
+      padding: 20px  !important;
     }
   }
   @media only screen and (max-width: 767px) {
