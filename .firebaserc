@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "webpage-automation",
-    "live": "go-nature-classroom"
+    "default": "go-nature-classroom"
   }
 }
