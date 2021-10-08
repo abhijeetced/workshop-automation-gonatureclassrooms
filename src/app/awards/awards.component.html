@@ -5,8 +5,15 @@
       <h4>AWARDS</h4>
       <p>We have been rewarded with various awards at the national & international levels. Yes, we believe in social proof, as in today’s world; one is considered genuine if they keep everything transparent.</p>
     </div>
-    <owl-carousel-o [options]="customOptions">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 pb-md-0 pb-3 " *ngFor="let slide of slidesStore">
+        <img [src]="slide.src" alt="" class="img-fluid">
+      </div>
+    </div>
+  <div>
+    <!-- <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide *ngFor="let slide of slidesStore"><img  [src]="slide.src"></ng-template>
-    </owl-carousel-o>
+    </owl-carousel-o> -->
+  </div>
   </div>
 </section>
