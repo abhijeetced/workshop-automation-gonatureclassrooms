@@ -12,7 +12,7 @@ import {
   supportsScrollBehavior,
 } from '@angular/cdk/platform';
 import { debounceTime } from 'rxjs/internal/operators/debounceTime';
-
+import * as FullStory from '@fullstory/browser';
 @Component({
   selector: 'gonature-workshop-root',
   templateUrl: './app.component.html',
@@ -25,7 +25,10 @@ export class AppComponent implements OnInit {
   popup = new BehaviorSubject(true);
   display = this.popup.asObservable();
   subscription = new Subscription();
-  constructor(public platform: Platform,private webinbar:WebinarService){}
+  constructor(public platform: Platform,private webinbar:WebinarService)
+  {
+    FullStory.init({ orgId: '13H4YV', devMode: false });
+  }
 
 
   clientslider: OwlOptions = {
